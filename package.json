@@ -1,0 +1,56 @@
+{
+  "name": "ifi-safety360-b6",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/sync-next-env.mjs",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit && node scripts/sync-next-env.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vinext",
+    "site:dev": "vinext dev",
+    "site:build": "vinext build && node scripts/sync-next-env.mjs",
+    "site:start": "vinext start"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
+    "lucide-react": "^1.31.0",
+    "next": "^16.3.8",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.52.1",
+    "@eslint/js": "9.39.4",
+    "@next/eslint-plugin-next": "^16.3.8",
+    "@openai/sites-vite-plugin": "^0.2.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "@vitejs/plugin-rsc": "^0.5.34",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "react-server-dom-webpack": "^19.2.8",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.3",
+    "vinext": "^1.0.0-beta.7",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10",
+    "wrangler": "^4.123.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,100 @@
+.page {
+  --header-height: 72px;
+  --canvas: #fafbf8;
+  --layer: #e9eedf;
+  --ink: #161915;
+  --muted: #687267;
+  --line: rgba(53, 67, 53, .22);
+  --accent: #ced8ba;
+  --safety: #ebe47a;
+  --ease-ui: cubic-bezier(.16, 1, .3, 1);
+  min-height: 100svh;
+  padding-top: 12px;
+  color: var(--ink);
+  background: var(--canvas);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  overflow-x: clip;
+}
+
+.page :focus-visible { outline-color: #526454; outline-offset: 4px; }
+
+.header {
+  position: sticky;
+  z-index: 50;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(calc(100% - 2rem), 1216px);
+  height: var(--header-height);
+  margin: 0 auto;
+  padding: .55rem .7rem .55rem .6rem;
+  color: var(--ink);
+  background: rgba(250, 251, 248, .96);
+  border: 1px solid rgba(53, 67, 53, .26);
+  border-radius: 22px;
+  box-shadow: 0 16px 42px rgba(22, 25, 21, .18);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .68rem;
+  height: 100%;
+  padding: .22rem .45rem;
+  color: var(--ink);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.brandMark { display: block; width: 46px; height: 46px; object-fit: cover; object-position: center; filter: contrast(1.18); mix-blend-mode: multiply; }
+.brandDivider { width: 1px; height: 40px; background: rgba(23, 19, 9, .56); }
+.brandName { display: grid; gap: .22rem; min-width: 0; line-height: 1; }
+.brandName strong { font-size: 1.52rem; font-weight: 780; letter-spacing: .11em; }
+.brandName small { font-size: .62rem; font-weight: 650; letter-spacing: .015em; white-space: nowrap; }
+
+.navigation { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2rem); font-size: .78rem; font-weight: 650; }
+.navigation > a:not(.signIn) { position: relative; color: rgba(23, 19, 9, .7); transition: color 140ms var(--ease-ui); }
+.navigation > a:not(.signIn)::after { content: ""; position: absolute; right: 0; bottom: -.42rem; left: 0; height: 1px; background: var(--ink); transform: scaleX(0); transform-origin: right; transition: transform 180ms var(--ease-ui); }
+.navigation > a:not(.signIn):hover,
+.navigation > a[aria-current="page"] { color: var(--ink); }
+.navigation > a:not(.signIn):hover::after,
+.navigation > a[aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
+
+.signIn { display: inline-flex; align-items: center; gap: .6rem; min-height: 48px; padding-inline: 1.15rem; color: #fafbf8; background: var(--ink); border-radius: 999px; transition: color 140ms, background 140ms, transform 140ms var(--ease-ui); }
+.signIn:hover { color: var(--ink); background: var(--accent); transform: translateY(-2px); }
+
+.footer { display: grid; grid-template-columns: auto minmax(180px, 1fr) auto; align-items: center; gap: 2rem; min-height: 120px; padding: 1.5rem max(1.5rem, calc((100vw - 1320px) / 2)); color: #8f9a8e; background: var(--ink); border-top: 1px solid rgba(206, 216, 186, .16); font-size: .74rem; }
+.footerBrand { display: flex; align-items: center; gap: .7rem; color: #fafbf8; }
+.footerBrand > img { width: 48px; height: 39px; object-fit: cover; filter: invert(1); mix-blend-mode: screen; }
+.footerBrand > span { display: grid; gap: .18rem; }
+.footerBrand strong { font-size: .78rem; letter-spacing: -.02em; text-transform: uppercase; }
+.footerBrand small { color: #8f9a8e; font-size: .56rem; }
+.footer p { margin: 0; line-height: 1.5; }
+.footerLinks { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .75rem 1.25rem; }
+.footerLinks a { color: var(--accent); font-weight: 620; transition: color 140ms, transform 140ms var(--ease-ui); }
+.footerLinks a:hover { color: var(--safety); transform: translateY(-2px); }
+
+@media (max-width: 760px) {
+  .page { --header-height: 64px; padding-top: 8px; }
+  .header { top: 8px; width: calc(100% - 1rem); padding: .4rem; border-radius: 14px; }
+  .brand { gap: .5rem; padding-inline: .25rem; }
+  .brandMark { width: 38px; height: 38px; }
+  .brandDivider { height: 34px; }
+  .brandName { gap: .16rem; }
+  .brandName strong { font-size: 1.18rem; }
+  .brandName small { font-size: .52rem; }
+  .navigation > a:not(.signIn) { display: none; }
+  .navigation { gap: .5rem; }
+  .signIn { min-height: 44px; padding-inline: .9rem; border-radius: 10px; }
+  .footer { grid-template-columns: 1fr; gap: 1.2rem; min-height: 180px; padding: 1.5rem 1rem; }
+  .footer p { display: none; }
+  .footerLinks { justify-content: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation a,
+  .signIn,
+  .footerLinks a { transition: none; }
+}

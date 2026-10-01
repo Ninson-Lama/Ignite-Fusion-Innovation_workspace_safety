@@ -1,0 +1,1 @@
+export const NOTIFICATION_DISMISS_MS = 4_000;
