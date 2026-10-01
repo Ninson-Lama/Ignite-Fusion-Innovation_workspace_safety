@@ -2,7 +2,7 @@
 
 ## About this guide
 
-Safety360 provides interactive workplace health-and-safety learning for the client context **Logistics and Warehousing Company (Automotive Sector)**. It is a training application, not an accreditation, regulator approval or guarantee that incidents will be prevented. Follow the employer’s current risk assessments, procedures, supervision and emergency arrangements.
+Safety360 provides interactive workplace health-and-safety learning for **Ignite Fusion Innovation (IFI)** in the logistics and warehousing (automotive sector) context. It is a training application, not an accreditation, regulator approval or guarantee that incidents will be prevented. Follow the employer’s current risk assessments, procedures, supervision and emergency arrangements.
 
 These instructions assume that an administrator has connected Supabase, applied the database migrations/seed and configured authentication redirects. Registration, sign-in, persistence and role-protected data require the documented local or canonical Vercel/Supabase setup.
 

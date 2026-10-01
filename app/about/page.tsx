@@ -70,11 +70,11 @@ export default function AboutPage() {
         <section className={styles.statement} aria-labelledby="project-title">
           <div>
             <p className={styles.eyebrow}>The project</p>
-            <h2 id="project-title">Created by Ignite Fusion Innovation.</h2>
+            <h2 id="project-title">Created for Ignite Fusion Innovation.</h2>
           </div>
           <div className={styles.statementCopy}>
-            <span className={styles.projectTag}>CET257 Enterprise Project · Group 4</span>
-            <p>IFI Safety360 is an enterprise project exploring how immersive scenarios, decision-based learning, mini-games and live administration can work together in one coherent safety-training platform.</p>
+            <span className={styles.projectTag}>CET257 Enterprise Project · Group 10</span>
+            <p>Developed by Team SWIMS for Ignite Fusion Innovation (IFI), Safety360 explores how immersive scenarios, decision-based learning, mini-games and live administration can work together in one coherent safety-training platform.</p>
             <p>The system separates trainee and administrator responsibilities while keeping assignments, progress, results and certificates connected.</p>
             <div className={styles.actions}>
               <Link className={styles.primaryAction} href="/#modules">Explore the modules <ArrowRight size={17} aria-hidden="true" /></Link>

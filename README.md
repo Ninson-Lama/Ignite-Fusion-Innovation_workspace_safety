@@ -4,9 +4,15 @@
   <img src="public/ifi-logo.jpeg" alt="Ignite Fusion Innovation logo" width="420" />
 </p>
 
-Safety360 is a responsive workplace learning platform for the **Logistics and Warehousing Company (Automotive Sector)**. It combines structured lessons, practical decisions, protected assessments, interactive mini-games, progress tracking and administration tools in one Supabase-backed application.
+Safety360 is a responsive workplace learning platform developed for **Ignite Fusion Innovation (IFI)** in the logistics and automotive-warehousing context. It combines structured lessons, practical decisions, protected assessments, interactive mini-games, progress tracking and administration tools in one Supabase-backed application.
 
-This repository is the University of Sunderland **CET257 Enterprise Project — Group 4 / Ignite Fusion Innovation (IFI)** B6 application, with the supporting B1 design documentation included under [`docs/b1`](docs/b1).
+This repository is the University of Sunderland **CET257 Enterprise Project — Group 10** B6 application, created by **Team SWIMS** for **Ignite Fusion Innovation (IFI)**. Supporting B1 design documentation is included under [`docs/b1`](docs/b1).
+
+| Project identity | Details |
+| --- | --- |
+| Company | Ignite Fusion Innovation (IFI) |
+| Team | SWIMS |
+| Academic group | Group 10 |
 
 > Safety360 is a training prototype. Its content must be reviewed against the organisation's real procedures before it is used for employee instruction. It does not claim external accreditation or replace competent workplace supervision.
 

@@ -217,7 +217,7 @@ export default function Home() {
           <Image src="/ifi-flame.jpeg" alt="" width={50} height={41} />
           <span><strong>IFI Safety360</strong><small>Ignite Fusion Innovation</small></span>
         </Link>
-        <p>Interactive safety training for the Logistics and Warehousing Company · Automotive sector</p>
+        <p>Interactive safety training for IFI · Logistics and automotive warehousing</p>
         <nav className={styles.footerLinks} aria-label="Footer navigation">
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>

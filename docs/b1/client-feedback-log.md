@@ -4,7 +4,7 @@
 
 No client meeting notes, emails, messages, recordings, approvals or feedback artefacts were supplied in the starting folder. No stakeholder interaction has been evidenced during this implementation. For that reason, this log contains no claimed client feedback and no internal design decision is attributed to the client.
 
-Client identity remains exactly **Logistics and Warehousing Company (Automotive Sector)**. No company name, representative name, address, staff count, accident history, endorsement or statistic has been inferred.
+The company is **Ignite Fusion Innovation (IFI)**, operating within the stated **logistics and warehousing (automotive sector)** project context. No representative name, address, staff count, accident history, endorsement or statistic has been inferred.
 
 ## Current register
 

@@ -2,7 +2,7 @@
 
 ## Scope and conventions
 
-These stories describe IFI Safety360 for the client context **Logistics and Warehousing Company (Automotive Sector)**. “Manager” means a Health & Safety Manager whose management views are restricted to relevant trainees in the same department. An administrator has wider authorised management capability. Acceptance criteria are specifications, not recorded test results.
+These stories describe IFI Safety360 for **Ignite Fusion Innovation (IFI)** in the logistics and warehousing (automotive sector) context. “Manager” means a Health & Safety Manager whose management views are restricted to relevant trainees in the same department. An administrator has wider authorised management capability. Acceptance criteria are specifications, not recorded test results.
 
 ## Authentication and account stories
 

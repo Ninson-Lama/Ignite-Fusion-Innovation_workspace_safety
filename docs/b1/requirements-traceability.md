@@ -6,7 +6,7 @@
 | --- | --- |
 | Product | IFI Safety360 |
 | Project | CET257 Enterprise Project, B6 final prototype/application |
-| Client context | Logistics and Warehousing Company (Automotive Sector) |
+| Client context | Ignite Fusion Innovation (IFI) — logistics and warehousing (automotive sector) |
 | Baseline | A1 functional requirements FR1–FR12, carried into the B6 brief |
 | Evidence rule | A source path is implementation evidence only. Dated local, embedded-database and partial hosted-project outcomes are recorded in `testing-plan.md`; unexecuted browser/RLS cases remain pending and personal screenshots are not committed. |
 
