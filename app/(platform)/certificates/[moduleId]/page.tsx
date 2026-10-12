@@ -19,7 +19,7 @@ export default async function CertificatePage({ params }: { params: Promise<{ mo
 
   return (
     <article className="certificate-detail-page">
-      <div className="certificate-page-actions"><Link className="back-link" href="/certificates"><ArrowLeft size={17} /> Certificates</Link><PrintCertificateButton /></div>
+      <div className="certificate-page-actions"><Link className="back-link" href="/certificates"><ArrowLeft size={17} /> Certificates</Link><PrintCertificateButton recipientName={viewer.fullName} moduleTitle={certificate.moduleTitle} completedDate={completedDate} certificateReference={certificate.certificateReference} /></div>
       <section className="certificate-sheet" aria-label={`Certificate for ${certificate.moduleTitle}`}>
         <div className="certificate-sheet-frame">
           <header><span className="certificate-seal"><BadgeCheck /></span><div><strong>IFI</strong><small>Safety360</small></div><p>Certificate of completion</p></header>
